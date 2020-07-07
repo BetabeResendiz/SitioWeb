@@ -1,0 +1,33 @@
+@media screen and (max-width: 480px) {
+	#menu_principal{
+		position: absolute;
+		top: -130px;
+		width: 100%;
+		min-width: 320px;
+	}
+	#menu_principal a{
+		display: block;
+		color: #fff;
+	}
+	#menu_principal #desplegar_menu{
+		display: block;
+		padding: 0px;
+		border: 0px;
+		font: bold 2rem arial, verdana ;
+	}
+	#menu_principal:hover{
+		top: 0px;
+	}
+	#menu_principal a:hover:not(#desplegar_menu){
+		border-color: blue;
+		background-color: rgba(0,0,0,0.5);
+	}
+	/*animaciones*/
+	#menu_principal{
+		-webkit-transition:all .4s ease-in-out;
+		-moz-transition:all .4s ease-in-out;
+		-o-transition:all .4s ease-in-out;
+		-ms-transition:all .4s ease-in-out;
+		transition: all .4s ease-in-out; 
+	}
+}
